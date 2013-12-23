@@ -163,7 +163,7 @@ module Precious
         tempfile = params[:file][:tempfile]
       end
 
-      dir = 'uploads'
+      dir = 'images'
       ext = ::File.extname(fullname)
       format = ext.split('.').last || 'txt'
       filename = ::File.basename(fullname, ext)
