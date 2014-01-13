@@ -125,6 +125,12 @@ module Precious
       end
     end
 
+    get '/html/*' do
+      if page = wiki_page(params[:splat].first).page
+        page.formatted_data
+      end
+    end
+
     get '/edit/*' do
       wikip = wiki_page(params[:splat].first)
       @name = wikip.name
