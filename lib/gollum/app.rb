@@ -179,7 +179,7 @@ module Precious
       head = wiki.repo.head
 
       options = {
-        :message => "Uploaded file to uploads/#{reponame}",
+        :message => "Uploaded file to images/#{reponame}",
         :parent => wiki.repo.head.commit,
       }
       author = session['gollum.author']
